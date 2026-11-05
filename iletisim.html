@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Eray Arda Aydın</title>
+</head>
+<body>
+
+    <header>
+        <h1>Eray Arda Aydın</h1>
+        <p>Bilgisayar Programcılığı Öğrencisi | Çorba Otomatı Bakım Teknisyeni</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Ana Sayfa</a> |
+        <a href="iletisim.html">İletişim</a> |
+        <a href="https://www.tff.org" target="_blank">TFF - Türkiye Futbol Federasyonu</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <section>
+            <h2>İletişim Formu</h2>
+            <p>Benimle iletişime geçmek için aşağıdaki formu doldurabilirsiniz.</p>
+
+            <form action="" method="post">
+
+                <fieldset>
+                    <legend><strong>Kişisel Bilgiler</strong></legend>
+                    <p>
+                        <label for="ad">Adınız Soyadınız:</label><br>
+                        <input type="text" id="ad" name="ad" size="40" placeholder="Adınızı ve soyadınızı giriniz" required>
+                    </p>
+                    <p>
+                        <label for="email">E-posta Adresiniz:</label><br>
+                        <input type="email" id="email" name="email" size="40" placeholder="ornek@mail.com" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Mesaj Detayları</strong></legend>
+                    <p>
+                        <label for="konu">Konu Seçiniz:</label><br>
+                        <select id="konu" name="konu">
+                            <option value="">-- Konu Seçiniz --</option>
+                            <option value="genel">Genel Bilgi</option>
+                            <option value="is">İş Teklifi</option>
+                            <option value="proje">Proje İş Birliği</option>
+                            <option value="arac">Araç Alım Satım</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mesaj">Mesajınız:</label><br>
+                        <textarea id="mesaj" name="mesaj" rows="6" cols="50" placeholder="Mesajınızı buraya yazınız..."></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>İletişim Tercihiniz</strong></legend>
+                    <p>
+                        <input type="radio" id="tel" name="iletisim_tercihi" value="telefon">
+                        <label for="tel">Telefon ile ulaşılsın</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="eposta_tercih" name="iletisim_tercihi" value="eposta" checked>
+                        <label for="eposta_tercih">E-posta ile ulaşılsın</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>İlgilendiğiniz Alanlar</strong></legend>
+                    <p>
+                        <input type="checkbox" id="web" name="alan[]" value="web">
+                        <label for="web">Web Geliştirme</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="mobil" name="alan[]" value="mobil">
+                        <label for="mobil">Mobil Uygulama</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="otomasyon" name="alan[]" value="otomasyon">
+                        <label for="otomasyon">Otomasyon Sistemleri</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="arac_yazilim" name="alan[]" value="arac">
+                        <label for="arac_yazilim">Araç İlan Yazılımları</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Formu Gönder">
+                    <input type="reset" value="Temizle">
+                </p>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Konumum</h2>
+            <p>Aşağıdaki haritadan konumumu inceleyebilirsiniz.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385398.5!2d28.7319!3d41.0049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str"
+                width="600"
+                height="400"
+                frameborder="0"
+                allowfullscreen
+                loading="lazy"
+                title="İstanbul Haritası">
+            </iframe>
+        </section>
+
+        <hr>
+
+        <article>
+            <h2>Sıkça Sorulan Sorular</h2>
+            <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Soru</th>
+                        <th>Cevap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hangi alanda çalışıyorsunuz?</td>
+                        <td>Çorba otomatı bakım ve teknik servis alanında çalışıyorum.</td>
+                    </tr>
+                    <tr>
+                        <td>Hangi programlama dillerini öğreniyorsunuz?</td>
+                        <td>HTML, CSS temelleri ve JavaScript öğrenmeye başladım.</td>
+                    </tr>
+                    <tr>
+                        <td>İş birliği yapmak mümkün mü?</td>
+                        <td>Evet, yukarıdaki formu doldurarak benimle iletişime geçebilirsiniz.</td>
+                    </tr>
+                    <tr>
+                        <td>Araç alım satım konusunda yardımcı olur musunuz?</td>
+                        <td>Evet, bu konuda bilgi ve deneyimlerimi paylaşmaktan memnuniyet duyarım.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+    </main>
+
+    <hr>
+
+    <aside>
+        <h3>Faydalı Bağlantılar</h3>
+        <ul>
+            <li><a href="index.html">Ana Sayfaya Dön</a></li>
+            <li><a href="https://www.tff.org" target="_blank">Türkiye Futbol Federasyonu</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        </ul>
+
+        <h3>Becerilerim</h3>
+        <ol>
+            <li>HTML Web Geliştirme</li>
+            <li>Teknik Bakım ve Onarım</li>
+            <li>Araç Değerleme ve Alım Satım</li>
+            <li>Müşteri İlişkileri</li>
+        </ol>
+    </aside>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Eray Arda Aydın - Tüm hakları saklıdır.</p>
+        <p>
+            <a href="index.html">Ana Sayfa</a> |
+            <a href="mailto:erayardaaydin@example.com">E-posta Gönder</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+
